@@ -9,7 +9,7 @@ body {
 .cover {
     position: fixed;
     inset: 0;
-    background-color: #f3f3ec;
+    background-color: #b6b8a3;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -140,20 +140,14 @@ body {
 .scroll-indicator {
     font-size:3rem;
     color: #8a7b5f;
+    background: none;
+    border: none;
+    cursor: pointer;
     opacity: 0.7;
     animation: float 2.2s ease-in-out infinite;
 }
 
-/* animação suave de “respiração” */
-@keyframes float {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(8px);
-    }
-}
-
+/* Animação da entrada */
 .delay-1 {
     transition-delay: 0.2s;
 }
@@ -165,6 +159,55 @@ body {
 .delay-3 {
     transition-delay: 0.6s;
 }
+.delay-4 {
+    transition-delay: 1s;
+}
+/* animação suave de “respiração”  para a seta*/
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(8px);
+    }
+}
+
+
+/*  Seção Nossa História */
+.story {
+    background-color: #b6b8a3;
+    padding: 50px 20px;
+    display: flex;
+}
+
+.story-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 48px;
+    align-items: center;
+}
+
+.story-image img {
+    width: 100%;
+    border: 8px double #fddeb6;
+    border-radius: 24px;
+    object-fit: cover;
+}
+
+.story-text h2 {
+    font-size: 2rem;
+    margin-bottom: 24px;
+    color: #8a7b5f;
+}
+
+.story-text p {
+    margin-bottom: 16px;
+    line-height: 1.7;
+    font-size: 1rem;
+    color: #8a7b5f;
+}
 
 /* RESPONSIVIDADE */
 
@@ -174,7 +217,7 @@ body {
     }
 
     .hero {
-        margin-top: -120px;
+        margin-top: -130px;
         padding: 60px 16px 32px;
     }
 
@@ -218,5 +261,29 @@ body {
     .invite button {
         width: 120px;
         height: 120px;
+    }
+
+    .story {
+        padding: 20px 16px;
+    }
+
+    .story-image img {
+        width: 95%;
+        height: 40vh;
+        object-fit: cover;
+    }
+
+    .story-container {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .story-text h2 {
+        text-align: center;
+    }
+
+    .story-text p {
+        text-align: center;
+        font-size: 1rem;
     }
 }
