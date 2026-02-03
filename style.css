@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    background-color: #f3f3ec;
+    font-family: serif;
+}
+
+.cover {
+    position: fixed;
+    inset: 0;
+    background-color: #f3f3ec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.cover.open {
+    opacity: 0;
+    transform: scale(1.05);
+    pointer-events: none;
+}
+
+
+.invite {
+    width: 600px;
+    height: 400px;
+    background-image: url("carta.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.invite button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 160px;
+    height: 160px;
+    transform: translate(-50%, -50%);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+
+.hero {
+    min-height: 100vh;
+    background-color: #f3f3ec;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 16px;
+    color: #6b5b3e;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    max-width: 480px;
+    line-height: 1.6;
+    color: #7a6a4f;
+    margin-bottom: 24px;
+}
+
+.hero .date {
+    font-size: 0.95rem;
+    letter-spacing: 2px;
+    color: #8a7b5f;
+    margin-bottom: 40px;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.delay-1 {
+    transition-delay: 0.2s;
+}
+
+.delay-2 {
+    transition-delay: 0.4s;
+}
+
+.scroll-indicator {
+    margin-top: 40px;
+    font-size: 1.4rem;
+    color: #8a7b5f;
+    opacity: 0.7;
+    animation: float 2.2s ease-in-out infinite;
+}
+
+/* animação suave de “respiração” */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(8px);
+    }
+}
+
+/* delay maior pra seta entrar por último */
+.delay-3 {
+    transition-delay: 0.6s;
+}
+
+
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 24px 16px;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+        margin-bottom: 12px;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        line-height: 1.6;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .hero .date {
+        font-size: 0.85rem;
+        letter-spacing: 1.5px;
+        margin-bottom: 32px;
+    }
+
+    .scroll-indicator {
+        font-size: 1.2rem;
+        margin-top: 24px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .invite {
+        width: 90%;
+        height: 300px;
+    }
+
+    .invite button {
+        width: 120px;
+        height: 120px;
+    }
+}
