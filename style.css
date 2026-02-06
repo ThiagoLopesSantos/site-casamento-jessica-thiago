@@ -197,6 +197,7 @@ body {
 }
 
 .story-text h2 {
+    max-width: 520px;
     font-size: 2rem;
     margin-bottom: 24px;
     color: #8a7b5f;
