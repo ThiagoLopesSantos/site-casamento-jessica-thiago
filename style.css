@@ -4,6 +4,20 @@ body {
     font-family: serif;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    max-width: 520px;
+    font-size: 2rem;
+    margin-bottom: 24px;
+    color: #9fa99b;
+}
+
+
 /* CARTA */
 
 .cover {
@@ -138,13 +152,25 @@ body {
 
 
 .scroll-indicator {
-    font-size:3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 5px;
+    font-size:1rem;
     color: #8a7b5f;
     background: none;
-    border: none;
     cursor: pointer;
     opacity: 0.7;
+    border: 1px solid;
+    border-radius: 10%;
+    box-shadow: 1px 1px 4px #6b5b3e;
     animation: float 2.2s ease-in-out infinite;
+}
+.scroll-indicator p{
+    font-size:1rem;
+    margin: 0;
 }
 
 /* Animação da entrada */
@@ -175,23 +201,25 @@ body {
 
 /*  Seção Nossa História */
 .story {
-    background-color: #b6b8a3;
+    background-color: #ececec;
     padding: 50px 20px;
     display: flex;
+    flex-direction: column;
 }
 
 .story-container {
     max-width: 1000px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     gap: 48px;
     align-items: center;
 }
 
+
 .story-image img {
     width: 100%;
-    border: 8px double #fddeb6;
+    height: 300px;
     border-radius: 24px;
     object-fit: cover;
 }
@@ -200,15 +228,37 @@ body {
     max-width: 520px;
     font-size: 2rem;
     margin-bottom: 24px;
-    color: #8a7b5f;
+    color: #9fa99b;
 }
 
 .story-text p {
     margin-bottom: 16px;
     line-height: 1.7;
+    width: 100%;
     font-size: 1rem;
-    color: #8a7b5f;
+    color: #9fa99b;
 }
+
+
+.local {
+    background-color: #f3f3ec;
+}
+.local-image {
+    width: 300px;
+    margin-top: -100px;
+    height: 100%;
+    object-fit: contain;
+    transform: rotate(90deg);
+}
+
+/* Footer */
+.footer {
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #7a6a4f;
+}
+
 
 /* RESPONSIVIDADE */
 
@@ -250,8 +300,12 @@ body {
     }
 
     .scroll-indicator {
-        font-size: 2rem;
+        font-size: 1rem;
         margin-top: 24px;
+    }
+
+    .scroll-indicator p{
+        margin: 0;
     }
 
     .invite {
@@ -287,4 +341,6 @@ body {
         text-align: center;
         font-size: 1rem;
     }
+
+
 }

@@ -6,7 +6,7 @@ function abrirConvite() {
         document.querySelectorAll(".reveal").forEach(el => {
         el.classList.add("active");
         });
-    }, 500);
+    }, 800);
 }
 
 // CONTAGEM REGRESSIVA
@@ -35,3 +35,20 @@ function atualizarContagem() {
 
 setInterval(atualizarContagem, 1000);
 atualizarContagem();
+
+// BOTÃO DE PRÓXIMO
+
+const scrollButtons = document.querySelectorAll(".scroll-indicator");
+
+scrollButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        const currentSection = button.closest("section");
+        const nextSection = currentSection.nextElementSibling;
+
+        if (nextSection) {
+            nextSection.scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+    });
+});
