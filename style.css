@@ -156,7 +156,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin: 10px auto;
     padding: 5px;
     font-size:1rem;
     color: #8a7b5f;
@@ -168,7 +168,7 @@ h2 {
     box-shadow: 1px 1px 4px #6b5b3e;
     animation: float 2.2s ease-in-out infinite;
 }
-.scroll-indicator p{
+.scroll-indicator span{
     font-size:1rem;
     margin: 0;
 }
@@ -238,18 +238,100 @@ h2 {
     font-size: 1rem;
     color: #9fa99b;
 }
-
+/* Cerimonial e Recepção */
 
 .local {
+    padding: 0px 20px;
     background-color: #f3f3ec;
 }
-.local-image {
-    width: 300px;
-    margin-top: -100px;
-    height: 100%;
-    object-fit: contain;
-    transform: rotate(90deg);
+
+.local .container {
+    max-width: 1100px;
+    margin: 0 auto;
 }
+
+.local h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #8a7b5f;
+    margin-bottom: 20px;
+}
+
+/* GRID PRINCIPAL */
+.local-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+/* INFO LADO A LADO */
+.local-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 0px;
+}
+
+.info-item h3 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #a38f6b;
+    margin-bottom: 6px;
+}
+
+.info-item p {
+    font-size: 1rem;
+    color: #6b5b3e;
+    line-height: 1.6;
+}
+
+/* MAPA */
+.map-container {
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+/* INPUT + BOTÃO */
+.route-box {
+    display: flex;
+    gap: 10px;
+}
+
+.route-box input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #d4cbb8;
+    font-size: 0.9rem;
+}
+
+.route-box button {
+    padding: 12px 20px;
+    border: none;
+    background-color: #8a7b5f;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.route-box button:hover {
+    background-color: #6b5b3e;
+}
+
+/* IMAGEM */
+.local-image {
+    width: 100%;
+    max-height: 400px;
+    height: 100%;
+    border-radius: 24px;
+    object-fit: cover;
+}
+
+
 
 /* Footer */
 .footer {
@@ -304,7 +386,7 @@ h2 {
         margin-top: 24px;
     }
 
-    .scroll-indicator p{
+    .scroll-indicator span{
         margin: 0;
     }
 
@@ -341,11 +423,23 @@ h2 {
         text-align: center;
         font-size: 1rem;
     }
-
-    .local-image {
-        width: 150px;
-        margin-top: 0px;
+    
+    .local-grid {
+        grid-template-columns: 1fr;
     }
 
+
+    .local-info {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .route-box {
+        flex-direction: column;
+    }
+
+    .route-box button {
+        width: 100%;
+    }
 
 }

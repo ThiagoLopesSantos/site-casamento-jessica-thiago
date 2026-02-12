@@ -52,3 +52,19 @@ scrollButtons.forEach(button => {
         }
     });
 });
+
+// Verificar Rota
+function tracarRota() {
+    const origem = document.getElementById("origin").value;
+
+    if (!origem) {
+        alert("Digite seu endereço.");
+        return;
+    }
+
+    const destino = "Av. Gaspar de Lemos, 450 Ilha de Guaratiba RJ";
+
+    const url = `https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(origem)}&destination=${encodeURIComponent(destino)}`;
+
+    window.open(url, "_blank");
+}
