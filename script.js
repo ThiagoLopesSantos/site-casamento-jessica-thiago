@@ -68,3 +68,37 @@ function tracarRota() {
 
     window.open(url, "_blank");
 }
+
+// PIX
+function mostrarPix() {
+    const pixArea = document.getElementById("pix-area");
+    const qrcodeContainer = document.getElementById("qrcode-container");
+    const btnPix = document.getElementById("btn-pix");
+
+    // Sua chave pix (pode ser CPF, E-mail ou Telefone)
+    // Exemplo de como fica o código "Copia e Cola"
+    const chavePix = "00020101021126580014br.gov.bcb.pix01364fbc930c-30b4-4d7e-93fd-52938d11fc295204000053039865802BR5915THIAGO L SANTOS6013RIO DE JANEIR62070503***63040112"; 
+
+    // URL da API que gera o QR Code com base no texto da chave
+    const urlQrCode = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(chavePix)}`;
+
+    // Insere a imagem dentro do container
+    qrcodeContainer.innerHTML = `<img src="${urlQrCode}" alt="QR Code Pix">`;
+
+    // Mostra a área do Pix com uma animação simples
+    pixArea.style.display = "block";
+    
+    // Esconde o botão após clicar (opcional)
+    btnPix.style.display = "none";
+}
+
+// Copia pix
+function copiarPix() {
+    // A mesma chave que você usou na outra função
+    const chavePix = "00020101021126580014br.gov.bcb.pix01364fbc930c-30b4-4d7e-93fd-52938d11fc295204000053039865802BR5915THIAGO L SANTOS6013RIO DE JANEIR62070503***63040112";  
+    
+    // Copia para a área de transferência
+    navigator.clipboard.writeText(chavePix).then(() => {
+        alert("Código Pix copiado! Agora é só colar no app do seu banco.");
+    });
+}

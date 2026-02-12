@@ -153,22 +153,23 @@ h2 {
 
 .scroll-indicator {
     display: flex;
-    flex-direction: column;
+    gap: 10px;
     justify-content: center;
     align-items: center;
     margin: 10px auto;
     padding: 5px;
-    font-size:1rem;
+    font-size:1.4rem;
     color: #8a7b5f;
     background: none;
     cursor: pointer;
     opacity: 0.7;
     border: 1px solid;
-    border-radius: 10%;
+    border-radius: 5%;
     box-shadow: 1px 1px 4px #6b5b3e;
     animation: float 2.2s ease-in-out infinite;
 }
 .scroll-indicator span{
+    font-weight: thinner;
     font-size:1rem;
     margin: 0;
 }
@@ -325,13 +326,203 @@ h2 {
 /* IMAGEM */
 .local-image {
     width: 100%;
-    max-height: 400px;
+    max-height: 350px;
     height: 100%;
     border-radius: 24px;
     object-fit: cover;
 }
 
+/* =========================
+    GIFTS
+========================= */
 
+.gifts {
+    padding: 0px 20px;
+    text-align: center;
+    background: #ececec;
+}
+
+.gifts h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.gifts p {
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    color: #666;
+}
+
+.gift-button {
+    padding: 14px 35px;
+    border-radius: 30px;
+    border: 1px solid #c8a97e;
+    background: transparent;
+    color: #c8a97e;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.gift-button:hover {
+    background: #c8a97e;
+    color: white;
+}
+
+#qrcode-container img {
+    border: 10px solid white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin: 15px 0;
+    max-width: 200px;
+}
+
+/* =========================
+    DRESS CODE
+========================= */
+.manual-classico {
+    padding: 0px 20px;
+    background-color: #f3f3ec;
+}
+
+.lista-ilustrada {
+    max-width: 650px;
+    margin: 40px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Espaço entre cada item da lista */
+}
+
+.item-manual {
+    display: flex;
+    align-items: center; /* Centraliza imagem e texto na mesma linha */
+    gap: 30px;
+}
+
+.imagem-icone {
+    flex: 0 0 80px; /* Largura fixa para a imagem não "esmagar" */
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem-icone img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    /* opcional: filtro para deixar as imagens em tom sépia ou suave */
+    filter: sepia(0.2) opacity(0.8);
+}
+
+.texto-manual {
+    text-align: left;
+}
+
+.texto-manual h3 {
+    margin: 0 0 8px 0;
+    font-family: 'Playfair Display', serif; /* Se tiver essa fonte, fica lindo */
+    color: #8a7b5f;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.texto-manual p {
+    margin: 0;
+    color: #7a6a4f;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Responsividade para celular */
+@media (max-width: 600px) {
+    .item-manual {
+        flex-direction: column; /* No celular, a imagem fica em cima do texto */
+        text-align: center;
+        gap: 15px;
+    }
+    .texto-manual {
+        text-align: center;
+    }
+}
+
+
+/* =========================
+    RSVP
+========================= */
+
+.rsvp {
+    padding: 100px 20px;
+    text-align: center;
+    background: #ececec;
+}
+
+.rsvp h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    font-family: 'Playfair Display', serif;
+}
+
+.rsvp p {
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.rsvp-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.rsvp-form input,
+.rsvp-form select {
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.rsvp-form input:focus,
+.rsvp-form select:focus {
+    border-color: #c8a97e;
+    box-shadow: 0 0 0 2px rgba(200,169,126,0.2);
+}
+
+.rsvp-form button {
+    padding: 14px;
+    border: none;
+    border-radius: 30px;
+    background: #c8a97e;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.rsvp-form button:hover {
+    background: #b8956b;
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    padding: 14px 30px;
+    border-radius: 30px;
+    border: none;
+    background: #c8a97e;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #b8956b;
+    transform: translateY(-2px);
+}
 
 /* Footer */
 .footer {
@@ -383,7 +574,7 @@ h2 {
 
     .scroll-indicator {
         font-size: 1rem;
-        margin-top: 24px;
+        margin-top: 2px;
     }
 
     .scroll-indicator span{
@@ -442,4 +633,15 @@ h2 {
         width: 100%;
     }
 
+    .rsvp,
+    .gifts,
+    .dresscode {
+        padding: 0px 20px;
+    }
+
+    .rsvp h2,
+    .gifts h2,
+    .dresscode h2 {
+        font-size: 1.8rem;
+    }
 }
