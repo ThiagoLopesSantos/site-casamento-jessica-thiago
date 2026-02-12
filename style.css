@@ -410,7 +410,7 @@ h2 {
 
 .imagem-icone img {
     width: 100%;
-    height: auto;
+    height: 100px;
     object-fit: contain;
     /* opcional: filtro para deixar as imagens em tom sépia ou suave */
     filter: sepia(0.2) opacity(0.8);
