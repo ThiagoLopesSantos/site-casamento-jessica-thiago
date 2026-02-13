@@ -358,17 +358,17 @@ h2 {
     margin: 40px auto 0;
     display: flex;
     flex-direction: column;
-    gap: 40px; /* Espaço entre cada item da lista */
+    gap: 30px;
 }
 
 .item-manual {
     display: flex;
-    align-items: center; /* Centraliza imagem e texto na mesma linha */
+    align-items: center; 
     gap: 30px;
 }
 
 .imagem-icone {
-    flex: 0 0 80px; /* Largura fixa para a imagem não "esmagar" */
+    flex: 0 0 80px; 
     height: 80px;
     display: flex;
     justify-content: center;
@@ -379,7 +379,7 @@ h2 {
     width: 100%;
     height: 100px;
     object-fit: contain;
-    /* opcional: filtro para deixar as imagens em tom sépia ou suave */
+    /* Filtro para deixar as imagens em tom sépia ou suave */
     filter: sepia(0.2) opacity(0.8);
 }
 
@@ -390,14 +390,14 @@ h2 {
 .texto-manual h3 {
     margin: 0 0 8px 0;
     font-family: 'Playfair Display', serif; /* Se tiver essa fonte, fica lindo */
-    color: #8a7b5f;
+    color: #9fa99b;
     font-size: 1.3rem;
     font-weight: 400;
 }
 
 .texto-manual p {
     margin: 0;
-    color: #7a6a4f;
+    color: #9fa99b;
     font-size: 1rem;
     line-height: 1.5;
 }
@@ -415,14 +415,22 @@ h2 {
 
 .gifts h2 {
     font-size: 2.2rem;
+    margin-top: 0;
     margin-bottom: 20px;
     font-family: 'Playfair Display', serif;
+    color: #8a7b5f;
+}
+
+.gifts img {
+    width: 20%;
+    object-position: bottom;
+    object-fit: cover;
 }
 
 .gifts p {
     max-width: 600px;
     margin: 0 auto 30px auto;
-    color: #666;
+    color: #8a7b5f;
 }
 
 .gift-button {
@@ -442,11 +450,10 @@ h2 {
 }
 
 #qrcode-container img {
-    border: 10px solid white;
+    border: 5px solid white;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    border-radius: 10px;
     margin: 15px 0;
-    max-width: 200px;
+    max-width: 400px;
 }
 
 
@@ -455,9 +462,10 @@ h2 {
 ========================= */
 
 .rsvp {
-    padding: 100px 20px;
+    padding: 0px 20px 20px;
     text-align: center;
     background: #ececec;
+    color: #9fa99b
 }
 
 .rsvp h2 {
@@ -467,7 +475,6 @@ h2 {
 }
 
 .rsvp p {
-    color: #666;
     margin-bottom: 40px;
 }
 
