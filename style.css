@@ -1,3 +1,6 @@
+/* =========================
+    PADRÃO
+========================= */
 body {
     margin: 0;
     background-color: #f3f3ec;
@@ -18,7 +21,9 @@ h2 {
 }
 
 
-/* CARTA */
+/* =========================
+    CARTA DE CONVITE
+========================= */
 
 .cover {
     position: fixed;
@@ -60,7 +65,10 @@ h2 {
     cursor: pointer;
 }
 
-/* TELA PRINCIPAL */
+
+/* =========================
+    HOME
+========================= */
 .top-image {
     display: flex;
     justify-content: center;
@@ -200,7 +208,9 @@ h2 {
 }
 
 
-/*  Seção Nossa História */
+/* =========================
+    NOSSA HISTÓRIA
+========================= */
 .story {
     background-color: #ececec;
     padding: 50px 20px;
@@ -239,7 +249,10 @@ h2 {
     font-size: 1rem;
     color: #9fa99b;
 }
-/* Cerimonial e Recepção */
+
+/* =========================
+    CERIMONIAL & RECEPÇÃO
+========================= */
 
 .local {
     padding: 0px 20px;
@@ -333,57 +346,11 @@ h2 {
 }
 
 /* =========================
-    GIFTS
-========================= */
-
-.gifts {
-    padding: 0px 20px;
-    text-align: center;
-    background: #ececec;
-}
-
-.gifts h2 {
-    font-size: 2.2rem;
-    margin-bottom: 20px;
-    font-family: 'Playfair Display', serif;
-}
-
-.gifts p {
-    max-width: 600px;
-    margin: 0 auto 30px auto;
-    color: #666;
-}
-
-.gift-button {
-    padding: 14px 35px;
-    border-radius: 30px;
-    border: 1px solid #c8a97e;
-    background: transparent;
-    color: #c8a97e;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-.gift-button:hover {
-    background: #c8a97e;
-    color: white;
-}
-
-#qrcode-container img {
-    border: 10px solid white;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    border-radius: 10px;
-    margin: 15px 0;
-    max-width: 200px;
-}
-
-/* =========================
-    DRESS CODE
+    GUIA DO CONVIDADO
 ========================= */
 .manual-classico {
     padding: 0px 20px;
-    background-color: #f3f3ec;
+    background-color: #ececec;
 }
 
 .lista-ilustrada {
@@ -435,16 +402,51 @@ h2 {
     line-height: 1.5;
 }
 
-/* Responsividade para celular */
-@media (max-width: 600px) {
-    .item-manual {
-        flex-direction: column; /* No celular, a imagem fica em cima do texto */
-        text-align: center;
-        gap: 15px;
-    }
-    .texto-manual {
-        text-align: center;
-    }
+
+/* =========================
+    GIFTS
+========================= */
+
+.gifts {
+    padding: 0px 20px;
+    text-align: center;
+    background: #f3f3ec;
+}
+
+.gifts h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.gifts p {
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    color: #666;
+}
+
+.gift-button {
+    padding: 14px 35px;
+    border-radius: 30px;
+    border: 1px solid #c8a97e;
+    background: transparent;
+    color: #c8a97e;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.gift-button:hover {
+    background: #c8a97e;
+    color: white;
+}
+
+#qrcode-container img {
+    border: 10px solid white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin: 15px 0;
+    max-width: 200px;
 }
 
 
@@ -631,6 +633,15 @@ h2 {
 
     .route-box button {
         width: 100%;
+    }
+
+    .item-manual {
+        flex-direction: column; /* No celular, a imagem fica em cima do texto */
+        text-align: center;
+        gap: 15px;
+    }
+    .texto-manual {
+        text-align: center;
     }
 
     .rsvp,

@@ -29,7 +29,7 @@
         </p>
         <span class="date reveal delay-2">
             28 • Novembro • 2026
-        </span>
+        </span> 
 
         <div class="countdown reveal delay-3">
             <div class="time-box">
@@ -95,13 +95,23 @@
             <h2 class="reveal">Cerimônia & Recepção</h2>
 
             <div class="local-grid">
-
+                <!-- LADO DIREITO -->
+                <div class="local-right reveal delay-2">
+                    <div class="info-item">
+                        <h3>Espaço</h3>
+                        <p>Sítio Casa das Pedras</p>
+                    </div>
+                    
+                    <img 
+                        class="local-image" 
+                        src="local-photo.jpeg" 
+                        alt="Foto do local do casamento"
+                    >
+                </div>
                 <!-- LADO ESQUERDO -->
                 <div class="local-left">
-
                     <!-- Infos lado a lado -->
                     <div class="local-info reveal delay-1">
-
                         <div class="info-item">
                             <h3>Endereço</h3>
                             <p>
@@ -110,9 +120,7 @@
                                 Rio de Janeiro - RJ
                             </p>
                         </div>
-
                     </div>
-
                     <!-- MAPA -->
                     <div class="map-container reveal delay-2">
                         <iframe 
@@ -132,25 +140,9 @@
                                 id="origin" 
                                 placeholder="Digite seu endereço..."
                             >
-                            <button onclick="tracarRota()">Ver rota</button>
+                            <button onclick="tracarRota()">Buscar rota</button>
                         </div>
                     </div>
-
-
-                </div>
-
-                <!-- LADO DIREITO -->
-                <div class="local-right reveal delay-2">
-                    <div class="info-item">
-                        <h3>Espaço</h3>
-                        <p>Sítio Casa das Pedras</p>
-                    </div>
-                    
-                    <img 
-                        class="local-image" 
-                        src="local-photo.jpeg" 
-                        alt="Foto do local do casamento"
-                    >
                 </div>
             </div>
         </div>
@@ -160,6 +152,48 @@
         </button>
     </section>
     
+    <!-- Guia do Convidado-->
+    <section class="manual-classico">
+        <div class="container">
+            <h2 class="reveal">Guia do Convidado</h2>
+            
+            <div class="lista-ilustrada">
+
+                <div class="item-manual reveal delay-1">
+                    <div class="imagem-icone">
+                        <img src="time.png" alt="Ícone Relógio"> </div>
+                    <div class="texto-manual">
+                        <h3>Nosso grande momento começa às 15:00h!</h3>
+                        <p>Chegue <strong>30 minutos</strong> antes para se acomodar com tranquilidade e aproveitar cada detalhe preparado com carinho.</p>
+                        <p>Recomendamos que saiam com antecedência, pois a região pode apresentar <strong>trânsito</strong> em determinados horários. Utilize o <strong>mapa</strong> disponível neste site para facilitar sua rota.</p>
+                    </div>
+                </div>
+                
+                <div class="item-manual reveal delay-1">
+                    <div class="imagem-icone">
+                        <img src="dressCode.png" alt="Ícone Traje"> </div>
+                    <div class="texto-manual">
+                        <h3>Traje Esporte Fino</h3>
+                        <p>Nosso casamento será ao ar livre, em meio à natureza. Sugerimos traje esporte fino e calçados confortáveis para melhor aproveitarem a celebração.</p>
+                    </div>
+                </div>
+                
+                <div class="item-manual reveal delay-1">
+                    <div class="imagem-icone">
+                        <img src="car.png" alt="Ícone Carro"> </div>
+                    <div class="texto-manual">
+                        <h3>Estacionamento</h3>
+                        <p>O local conta com estacionamento no próprio espaço para maior comodidade dos convidados.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <button class="scroll-indicator reveal delay-3" data-scroll="next" aria-label="Descer">
+            <span>DESCER</span>↓
+        </button>
+    </section>
+
     <!-- Presentes -->
     <section class="gifts">
         <div class="container">
@@ -179,46 +213,6 @@
                 <button class="gift-button" onclick="copiarPix()" style="margin-top: 10px; font-size: 0.8rem;">
                     Copiar código Pix
                 </button>
-            </div>
-        </div>
-        <button class="scroll-indicator reveal delay-3" data-scroll="next" aria-label="Descer">
-            <span>DESCER</span>↓
-        </button>
-    </section>
-
-<section class="manual-classico">
-        <div class="container">
-            <h2 class="reveal">Guia do Convidado</h2>
-            
-            <div class="lista-ilustrada">
-                
-                <div class="item-manual reveal delay-1">
-                    <div class="imagem-icone">
-                        <img src="dressCode.png" alt="Ícone Traje"> </div>
-                    <div class="texto-manual">
-                        <h3>Traje Esporte Fino</h3>
-                        <p>Sugerimos tons suaves. Para elas, vestidos fluidos; para eles, camisa social e calça de sarja ou social.</p>
-                    </div>
-                </div>
-
-                <div class="item-manual reveal delay-2">
-                    <div class="imagem-icone">
-                        <img src="grama.png" alt="Ícone Sapato"> </div>
-                    <div class="texto-manual">
-                        <h3>Dica para as Convidadas</h3>
-                        <p>A cerimônia será em área externa. Recomendamos saltos mais largos (blocado ou anabela) para sua comodidade no gramado.</p>
-                    </div>
-                </div>
-
-                <div class="item-manual reveal delay-3">
-                    <div class="imagem-icone">
-                        <img src="relogio.png" alt="Ícone Horário"> </div>
-                    <div class="texto-manual">
-                        <h3>Horário</h3>
-                        <p>Nossa celebração começa às 14:00h. Sua pontualidade é um carinho especial com os noivos.</p>
-                    </div>
-                </div>
-
             </div>
         </div>
         <button class="scroll-indicator reveal delay-3" data-scroll="next" aria-label="Descer">
