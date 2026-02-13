@@ -662,4 +662,8 @@ h2 {
     .dresscode h2 {
         font-size: 1.8rem;
     }
+
+    .gifts img {
+        width: 40%;
+    }
 }
