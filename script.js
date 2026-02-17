@@ -1,12 +1,22 @@
+
+// ABRIR CONVITE
 function abrirConvite() {
     const cover = document.getElementById("cover");
-    cover.classList.add("open");
 
+    cover.classList.add("open");
+    
+    // Revela os elementos com a classe "reveal"
     setTimeout(() => {
         document.querySelectorAll(".reveal").forEach(el => {
-        el.classList.add("active");
+            el.classList.add("active");
         });
     }, 800);
+    
+    // Vai suavemente para o topo (Hero)
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
 }
 
 // CONTAGEM REGRESSIVA
@@ -92,7 +102,7 @@ function mostrarPix() {
     btnPix.style.display = "none";
 }
 
-// Copia pix
+// Copia CHAVE pix
 function copiarPix() {
     // A mesma chave que você usou na outra função
     const chavePix = "00020101021126580014br.gov.bcb.pix01364fbc930c-30b4-4d7e-93fd-52938d11fc295204000053039865802BR5915THIAGO L SANTOS6013RIO DE JANEIR62070503***63040112";  
@@ -102,3 +112,14 @@ function copiarPix() {
         alert("Código Pix copiado! Agora é só colar no app do seu banco.");
     });
 }
+
+// CONFIRMAÇÃO DE PRESENÇA
+document.querySelector(".rsvp-form").addEventListener("submit", function(e){
+    e.preventDefault();
+    this.innerHTML = `
+        <div class="rsvp-success">
+            <h3>Presença confirmada!</h3>
+            <p>Estamos muito felizes por ter você conosco ❤️</p>
+        </div>
+    `;
+});
