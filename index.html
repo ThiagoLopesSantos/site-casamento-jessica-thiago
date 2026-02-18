@@ -24,7 +24,8 @@
         <!-- HOME -->
         <section class="home">
 
-        
+            <img src="images/flores7.png" alt="FLORES" class="flower-decor right-bottom">
+            
             <!-- TOPO AQUARELA -->
             <div class="top-image">
                 <img src="images/topbanner.png" alt="Ilustração em aquarela">
@@ -100,58 +101,39 @@
         <!-- Cerimônia & Recepção -->
         <section class="local">
             <div class="container">
-
+                <!-- <img src="images/plantas.png" alt="FLORES" class="flower-decor left-bottom"> -->
+                
                 <h2 class="reveal">Cerimônia & Recepção</h2>
 
                 <div class="local-grid">
                     <!-- LADO ESQUERDO -->
                     <div class="reveal delay-2">
                         <div class="info-item">
-                            <h3>Espaço</h3>
+                            <h3>Endereço</h3>
                             <p>Sítio Casa das Pedras</p>
+                            <p>
+                                Av. Gaspar de Lemos, 450
+                                Ilha de Guaratiba
+                                Rio de Janeiro - RJ
+                            </p>
                         </div>
-                        <img 
-                            class="local-image" 
-                            src="images/local-photo.jpeg" 
-                            alt="Foto do local do casamento"
-                        >
+                        <div class="route-box reveal delay-3">
+                            <input 
+                                type="text" 
+                                id="origin" 
+                                placeholder="Digite seu endereço..."
+                            >
+                            <button onclick="tracarRota()">Buscar rota</button>
+                        </div>
                     </div>
                     
                     <!-- LADO DIREITO -->
                     <div class="reveal delay-2">
-                        <!-- Infos lado a lado -->
-                        <div class="local-info reveal delay-2">
-                            <div class="info-item">
-                                <h3>Endereço</h3>
-                                <p>
-                                    Av. Gaspar de Lemos, 450
-                                    Ilha de Guaratiba
-                                    Rio de Janeiro - RJ
-                                </p>
-                            </div>
-                        </div>
-                        <!-- MAPA -->
-                        <div class="map-container reveal delay-2">
-                            <iframe 
-                                id="mapFrame"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2635.091921980804!2d-43.56248142468705!3d-22.991859079195276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9be8ac54419315%3A0x8406a0c060c6f3f9!2sCasa%20das%20Pedras%20Festas%20e%20Eventos!5e1!3m2!1spt-BR!2sbr!4v1770852512045!5m2!1spt-BR!2sbr"
-                                width="100%" 
-                                height="250" 
-                                style="border:0;" 
-                                allowfullscreen="" 
-                                loading="lazy">
-                            </iframe>
-                            
-                            <!-- INPUT ROTA -->
-                            <div class="route-box reveal delay-3">
-                                <input 
-                                    type="text" 
-                                    id="origin" 
-                                    placeholder="Digite seu endereço..."
-                                >
-                                <button onclick="tracarRota()">Buscar rota</button>
-                            </div>
-                        </div>
+                        <img 
+                        class="local-image" 
+                        src="images/local-photo.jpeg" 
+                        alt="Foto do local do casamento"
+                        >
                     </div>
                 </div>
             </div>

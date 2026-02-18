@@ -6,7 +6,6 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Playfair Display', serif;
-
 }
 
 .container {
@@ -24,13 +23,19 @@ h2 {
 
 /* Configuração Geral das Flores */
 .flower-decor {
-    width: 350px;
-    height: 300px;
     position: absolute; 
     background-size: contain;
     background-repeat: no-repeat;
     pointer-events: none; 
     z-index: 1;  
+    object-fit: 100%;
+}
+.right-bottom {
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    height: 300px;
+    /* rotate: 180deg; */
 }
 
 /* =========================
@@ -231,7 +236,7 @@ h2 {
     NOSSA HISTÓRIA
 ========================= */
 .story {
-    background-color: #ececec;
+    background-color: #f3f3ec;
     padding: 20px;
     position: relative;
 }
@@ -273,6 +278,7 @@ h2 {
 .local {
     padding: 20px;
     background-color: #f3f3ec;
+    position: relative;
 }
 
 .local h2 {
@@ -286,6 +292,7 @@ h2 {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
     align-items: start;
+    gap: 40px;
 }
 
 .info-item h3 {
@@ -353,7 +360,7 @@ h2 {
 ========================= */
 .manual-classico {
     padding: 20px;
-    background-color: #ececec;
+    background-color: #f3f3ec;
 }
 
 .lista-ilustrada {
@@ -460,7 +467,7 @@ h2 {
 ========================= */
 .rsvp {
     padding:20px;
-    background-color: #ececec;
+    background-color: #f3f3ec;
     text-align: center;
 }
 
@@ -540,6 +547,7 @@ h2 {
     FOOTER
 ========================= */
 .footer {
+    background-color: #fafafa;
     padding: 30px 20px;
     text-align: center;
     font-size: 0.9rem;
