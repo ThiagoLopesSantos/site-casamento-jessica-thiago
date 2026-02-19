@@ -14,250 +14,328 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <!-- CARTA -->
-        <div class="cover" id="cover">
-            <div class="invite">
-                <button onclick="abrirConvite()" aria-label="Abrir convite"></button>
-            </div>
+    <!-- CARTA -->
+    <div class="cover" id="cover">
+        <div class="invite">
+            <button onclick="abrirConvite()" aria-label="Abrir convite"></button>
         </div>
+    </div>
 
-        <!-- HOME -->
-        <section class="home">
-
-            <img src="images/flores7.png" alt="FLORES" class="flower-decor right-bottom">
+    <!-- HOME -->
+    <section class="home">
+        <!-- TOPO AQUARELA -->
+        <div class="top-image">
+            <img src="images/topbanner.png" alt="Ilustração em aquarela">
+        </div>
+        
+        <!-- PRIMEIRA TELA REAL -->
+        <div class="hero">
+            <h1 class="reveal">Jéssica & Thiago</h1>
+            <p class="reveal delay-1">
+                Com o coração cheio de amor, convidamos você para celebrar esse lindo momento conosco!
+            </p>
+            <span class="date reveal delay-2">
+                28 • Novembro • 2026
+            </span> 
             
-            <!-- TOPO AQUARELA -->
-            <div class="top-image">
-                <img src="images/topbanner.png" alt="Ilustração em aquarela">
-            </div>
-            
-            <!-- PRIMEIRA TELA REAL -->
-            <div class="hero">
-                <h1 class="reveal">Jéssica & Thiago</h1>
-                <p class="reveal delay-1">
-                    Com o coração cheio de amor, convidamos você para celebrar esse lindo momento conosco!
-                </p>
-                <span class="date reveal delay-2">
-                    28 • Novembro • 2026
-                </span> 
-                
-                <div class="countdown reveal delay-3">
-                    <div class="time-box">
-                        <span id="days">00</span>
-                        <small>Dias</small>
-                    </div>
-        
-                    <div class="time-box">
-                        <span id="hours">00</span>
-                        <small>Horas</small>
-                    </div>
-        
-                    <div class="time-box">
-                        <span id="minutes">00</span>
-                        <small>Min</small>
-                    </div>
-        
-                    <div class="time-box">
-                        <span id="seconds">00</span>
-                        <small>Seg</small>
-                    </div>
+            <div class="countdown reveal delay-3">
+                <div class="time-box">
+                    <span id="days">00</span>
+                    <small>Dias</small>
                 </div>
-                <button class="scroll-indicator reveal delay-3" data-scroll="next" aria-label="Descer">
-                    <span>Nossa História</span>↓
-                </button>
-            </div>
-                    
-        </section>
-        
-        <!-- Nossa História -->
-        <section class="story">
-            <div class="container story-container">
-                <div class="story-image reveal">
-                    <img src="images/aqcasal.png" alt="Jéssica e Thiago">
+    
+                <div class="time-box">
+                    <span id="hours">00</span>
+                    <small>Horas</small>
                 </div>
-
-                <div class="story-text reveal delay-1">
-                    <h2>Um pouco sobre nós...</h2>
-
-                    <p>
-                        Nossa história começou em <strong>11 de novembro de 2024</strong>, em uma simples conversa online.
-                        Entre mensagens, risadas e longas trocas, Deus foi unindo dois corações que ainda não sabiam
-                        o quanto estavam destinados um ao outro.
-                    </p>
-
-                    <p>
-                        Hoje seguimos lado a lado, aprendendo a amar e a crescer juntos.
-                        E no dia <strong>28 de novembro de 2026</strong>, diremos <strong>SIM</strong> ao nosso amor,
-                        à nossa família e ao propósito que nos trouxe até aqui.
-                    </p>
+    
+                <div class="time-box">
+                    <span id="minutes">00</span>
+                    <small>Min</small>
                 </div>
-
+    
+                <div class="time-box">
+                    <span id="seconds">00</span>
+                    <small>Seg</small>
+                </div>
             </div>
             <button class="scroll-indicator reveal delay-3" data-scroll="next" aria-label="Descer">
-                <span>Ver o endereço</span>↓
+                <span>Nossa História</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 5v14M19 12l-7 7-7-7"/>
+                </svg>
             </button>
-        </section>
+        </div>
+    </section>
 
-        <!-- Cerimônia & Recepção -->
-        <section class="local">
-            <div class="container">
-                <!-- <img src="images/plantas.png" alt="FLORES" class="flower-decor left-bottom"> -->
-                
-                <h2 class="reveal">Cerimônia & Recepção</h2>
+    <div class="floral-divider"></div>
 
-                <div class="local-grid">
-                    <!-- LADO ESQUERDO -->
-                    <div class="reveal delay-2">
-                        <div class="info-item">
-                            <h3>Endereço</h3>
-                            <p>Sítio Casa das Pedras</p>
-                            <p>
-                                Av. Gaspar de Lemos, 450
-                                Ilha de Guaratiba
-                                Rio de Janeiro - RJ
-                            </p>
-                        </div>
+    <!-- Nossa História -->
+    <section class="story">
+        <!-- <div class="floral-corner top-left"></div> -->
+        <!-- <div class="floral-corner bottom-right"></div> -->
+        
+        <div class="container story-container">
+            <div class="story-image reveal">
+                <img src="images/aqcasal.png" alt="Jéssica e Thiago">
+            </div>
+
+            <div class="story-text reveal delay-1">
+                <h2>Um pouco sobre nós...</h2>
+
+                <p>
+                    Nossa história começou em <strong>11 de novembro de 2024</strong>, em uma simples conversa online.
+                    Entre mensagens, risadas e longas trocas, Deus foi unindo dois corações que ainda não sabiam
+                    o quanto estavam destinados um ao outro.
+                </p>
+
+                <p>
+                    Hoje seguimos lado a lado, aprendendo a amar e a crescer juntos.
+                    E no dia <strong>28 de novembro de 2026</strong>, diremos <strong>SIM</strong> ao nosso amor,
+                    à nossa família e ao propósito que nos trouxe até aqui.
+                </p>
+            </div>
+        </div>
+        
+        <button class="scroll-indicator reveal delay-3" data-scroll="next" aria-label="Descer">
+            <span>Ver o endereço</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v14M19 12l-7 7-7-7"/>
+            </svg>
+        </button>
+    </section>
+
+    <div class="floral-divider"></div>
+
+    <!-- Cerimônia & Recepção -->
+    <section class="local">
+        <div class="container">
+            <h2 class="reveal">Cerimônia & Recepção</h2>
+
+            <div class="local-grid">
+                <!-- LADO ESQUERDO -->
+                <div class="reveal delay-2">
+                    <div class="info-item">
+                        <h3>📍 Endereço</h3>
+                        <p><strong>Sítio Casa das Pedras</strong></p>
+                        <p>Av. Gaspar de Lemos, 450</p>
+                        <p>Ilha de Guaratiba, Rio de Janeiro - RJ</p>
                         <div class="route-box reveal delay-3">
                             <input 
                                 type="text" 
                                 id="origin" 
                                 placeholder="Digite seu endereço..."
                             >
-                            <button onclick="tracarRota()">Buscar rota</button>
+                            <button onclick="tracarRota()">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 5px;">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                Traçar Rota
+                            </button>
                         </div>
                     </div>
                     
-                    <!-- LADO DIREITO -->
-                    <div class="reveal delay-2">
-                        <img 
+                    <div class="info-item">
+                        <h3>🕐 Horário</h3>
+                        <p>Cerimônia: 14:30h</p>
+                        <p>Recepção: 16:30h</p>
+                    </div>
+
+                </div>
+                
+                <!-- LADO DIREITO -->
+                <div class="reveal delay-2">
+                    <img 
                         class="local-image" 
                         src="images/local-photo.jpeg" 
                         alt="Foto do local do casamento"
-                        >
-                    </div>
+                    >
                 </div>
             </div>
-            
-            <button class="scroll-indicator reveal delay-3" data-scroll="next" aria-label="Descer">
-                <span>Guia do convidado</span>↓
-            </button>
-        </section>
+        </div>
         
-        <!-- Guia do Convidado-->
-        <section class="manual-classico">
-            <div class="container">
-                <h2 class="reveal">Guia do Convidado</h2>
+        <button class="scroll-indicator reveal delay-3" data-scroll="next" aria-label="Descer">
+            <span>Guia do convidado</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v14M19 12l-7 7-7-7"/>
+            </svg>
+        </button>
+    </section>
+
+    <div class="floral-divider"></div>
+
+    <!-- Guia do Convidado-->
+    <section class="manual-classico">
+        <div class="container">
+            <h2 class="reveal">Guia do Convidado</h2>
+            
+            <div class="lista-ilustrada">
+
+                <div class="item-manual reveal delay-1">
+                    <div class="image-icon">
+                        <img src="images/time.png" alt="Ícone Relógio">
+                    </div>
+                    <div class="texto-manual">
+                        <h3>Chegue cedo!</h3>
+                        <p>Nosso grande momento começa às <strong>15:00h</strong>! Chegue com antecedência para aproveitar cada detalhe.</p>
+                        <p style="margin-top: 10px; font-size: 0.9rem;">A região pode apresentar trânsito nos horários de pico.</p>
+                    </div>
+                </div>
                 
-                <div class="lista-ilustrada">
-
-                    <div class="item-manual reveal delay-1">
-                        <div class="image-icon">
-                            <img src="images/time.png" alt="Ícone Relógio"> </div>
-                        <div class="texto-manual">
-                            <h3>Nosso grande momento começa às 15:00h!</h3>
-                            <p>Chegue <strong>30 minutos</strong> antes para se acomodar com tranquilidade e aproveitar cada detalhe preparado com carinho.</p>
-                            <p>Recomendamos que saiam com antecedência, pois a região pode apresentar <strong>trânsito</strong> em determinados horários. Utilize o <strong>mapa</strong> disponível neste site para facilitar sua rota.</p>
-                        </div>
+                <div class="item-manual reveal delay-1">
+                    <div class="image-icon">
+                        <img src="images/dressCode.png" alt="Ícone Traje"> 
                     </div>
-                    
-                    <div class="item-manual reveal delay-1">
-                        <div class="image-icon">
-                            <img src="images/dressCode.png" alt="Ícone Traje"> 
-                        </div>
-                        <div class="texto-manual">
-                            <h3>Traje Esporte Fino</h3>
-                            <p>Nosso casamento será ao ar livre, em meio à natureza. Sugerimos traje esporte fino e calçados confortáveis para melhor aproveitarem a celebração.</p>
-                        </div>
+                    <div class="texto-manual">
+                        <h3>Traje Esporte Fino</h3>
+                        <p>Casamento ao ar livre, em meio à natureza. Sugerimos calçados confortáveis para melhor aproveitarem a celebração.</p>
                     </div>
-                    
-                    <div class="item-manual reveal delay-1">
-                        <div class="image-icon">
-                            <img src="images/car.png" alt="Ícone Carro"> </div>
-                        <div class="texto-manual">
-                            <h3>Estacionamento</h3>
-                            <p>O local conta com estacionamento no próprio espaço para maior comodidade dos convidados.</p>
-                        </div>
-                    </div>
-
                 </div>
-            </div>
-            <button class="scroll-indicator reveal delay-3" data-scroll="next" aria-label="Descer">
-                <span>PRESENTES</span>↓
-            </button>
-        </section>
-
-        <!-- Presentes -->
-        <section class="gifts">
-            <div class="container">
-                <img class="gifts-img" src="images/gift.png" alt="Presentes"/>
-                <h2>Presenteie os noivos</h2>
-                <p>
-                    Sua presença é o nosso maior presente. 
-                    Mas, se desejar nos presentear, deixamos aqui o pix para ajudar o nosso sonho.
-                </p>
-
-                <button class="gift-button" id="btn-pix" onclick="mostrarPix()">Ver Chave Pix</button>
-
-                <div id="pix-area" style="display: none; margin-top: 20px;">
-                    <p><strong>Banco Inter</strong>: Thiago Lopes Santos CPF: ***.702.367-**</p>
-                    <div id="qrcode-container"></div>
-                    <p>Aponte a câmera do celular para o código acima</p>
-
-                    <button class="gift-button" onclick="copiarPix()" >
-                        Copiar código Pix
-                    </button>
+                
+                <div class="item-manual reveal delay-1">
+                    <div class="image-icon">
+                        <img src="images/car.png" alt="Ícone Carro">
+                    </div>
+                    <div class="texto-manual">
+                        <h3>Estacionamento</h3>
+                        <p>O local conta com <strong>estacionamento próprio</strong> e seguro para maior comodidade dos convidados.</p>
+                    </div>
                 </div>
-            </div>
-            <button class="scroll-indicator reveal delay-3" data-scroll="next" aria-label="Descer">
-                <span>Confirmar Presença</span>↓
-            </button>
-        </section>
-
-        <section class="rsvp">
-            <div class="container">
-                <h2>Confirme sua Presença</h2>
-                <p class="rsvp-subtitle">
-                    Sua presença tornará nosso dia ainda mais especial.
-                    Pedimos que confirme até <strong>01 de Novembro de 2026</strong>.
-                </p>
-
-                <form class="rsvp-form">
-
-                    <div class="form-group">
-                        <label>Nome completo</label>
-                        <input type="text" placeholder="Digite seu nome completo" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label>Acompanhante (se houver)</label>
-                        <input type="text" placeholder="Nome do acompanhante">
-                    </div>
-
-                    <div class="form-group">
-                        <label>Você poderá comparecer?</label>
-                        <select required>
-                            <option value="">Selecione uma opção</option>
-                            <option>Sim, estarei presente!</option>
-                            <option>Não poderei comparecer</option>
-                        </select>
-                    </div>
-
-                    <button type="submit" class="rsvp-button">
-                        Confirmar Presença
-                    </button>
-
-                </form>
 
             </div>
-        </section>
+        </div>
+        
+        <button class="scroll-indicator reveal delay-3" data-scroll="next" aria-label="Descer">
+            <span>Lista de Presentes</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v14M19 12l-7 7-7-7"/>
+            </svg>
+        </button>
+    </section>
 
+    <div class="floral-divider"></div>
 
-        <footer class="footer">
+    <!-- Presentes Melhorado -->
+    <section class="gifts">
+        <!-- <div class="floral-corner top-right"></div> -->
+        <!-- <div class="floral-corner bottom-left"></div> -->
+        
+        <div class="container gifts-container">
+            <div class="gifts-icon">🎁</div>
+            <h2>Lista de Presentes</h2>
             <p>
-                Jéssica & Thiago • 28 de novembro de 2026
+                Sua presença é nosso maior presente! Mas, se desejar nos presentear, 
+                contribua para nossa <strong>lua de mel</strong>. Cada valor nos ajudará 
+                a construir memórias inesquecíveis!
             </p>
-        </footer>
 
-        <script src="script.js"></script>
+            <div class="pix-card" id="pix-card">
+                <div class="pix-header">
+                    <h3>Transferência via PIX</h3>
+                    <span class="pix-bank">🏦 Banco Inter</span>
+                </div>
+
+                <div id="qrcode-container" class="pix-qrcode" style="display: none;">
+                    <!-- QR Code será inserido aqui -->
+                </div>
+
+                <div id="pix-placeholder" class="pix-qrcode">
+                    <span style="font-size: 4rem;"></span>
+                </div>
+
+                <div class="pix-key-box" id="pix-key-box" style="display: none;">
+                    <div class="pix-key-label">Chave PIX (CPF)</div>
+                    <div class="pix-key" id="pix-key-display">***.702.367-**</div>
+                </div>
+
+                <div class="pix-buttons">
+                    <button class="btn-pix btn-pix-primary" id="btn-mostrar" onclick="mostrarPix()">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="8" y1="12" x2="16" y2="12"></line>
+                            <line x1="12" y1="8" x2="12" y2="16"></line>
+                        </svg>
+                        Mostrar QR Code
+                    </button>
+                    
+                    <button class="btn-pix btn-pix-secondary" id="btn-copiar" onclick="copiarPix()" style="display: none;">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                        </svg>
+                        Copiar Código
+                    </button>
+                </div>
+
+                <div class="pix-info">
+                    <p>Beneficiário</p>
+                    <strong>Thiago Lopes Santos</strong>
+                    <p style="margin-top: 10px; font-size: 0.8rem; opacity: 0.7;">
+                        Após a transferência, você receberá uma confirmação automática
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <button class="scroll-indicator reveal delay-3" data-scroll="next" aria-label="Descer">
+            <span>Confirmar Presença</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v14M19 12l-7 7-7-7"/>
+            </svg>
+        </button>
+    </section>
+
+    <div class="floral-divider"></div>
+
+    <!-- RSVP -->
+    <section class="rsvp">
+        <div class="container">
+            <h2>Confirme sua Presença</h2>
+            <p class="rsvp-subtitle reveal">
+                Sua presença tornará nosso dia ainda mais especial.
+                Pedimos que confirme até <strong>01 de Novembro de 2026</strong>.
+            </p>
+
+            <form class="rsvp-form reveal delay-1" id="rsvp-form">
+
+                <div class="form-group">
+                    <label>Nome completo</label>
+                    <input type="text" placeholder="Digite seu nome completo" required>
+                </div>
+
+                <div class="form-group">
+                    <label>E-mail</label>
+                    <input type="email" placeholder="seu@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Acompanhante (se houver)</label>
+                    <input type="text" placeholder="Nome do acompanhante">
+                </div>
+
+                <div class="form-group">
+                    <label>Você poderá comparecer?</label>
+                    <select required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="sim">Sim, estarei presente! 🎉</option>
+                        <option value="nao">Infelizmente não poderei comparecer</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="rsvp-button">
+                    Confirmar Presença
+                </button>
+
+            </form>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Jéssica & Thiago • 28 de novembro de 2026</p>
+        <p style="margin-top: 10px; font-size: 0.9rem;">Com amor, para você 💕</p>
+    </footer>
+    <script src="script.js"></script>
     </body>
 </html>
