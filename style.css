@@ -344,6 +344,7 @@ h2::after {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
+    padding: 0 20px;
     align-items: center;
 }
 
@@ -410,6 +411,7 @@ h2::after {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
+    padding: 0 20px;
     align-items: start;
 }
 
@@ -499,6 +501,7 @@ h2::after {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+    padding: 0 20px;
 }
 
 .item-manual {
@@ -792,6 +795,7 @@ h2::after {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    text-align: center;
     gap: 25px;
 }
 
@@ -908,10 +912,6 @@ h2::after {
     .lista-ilustrada {
         grid-template-columns: 1fr;
     }
-
-    .floral-corner {
-        display: none;
-    }
 }
 
 @media (max-width: 768px) {
@@ -924,7 +924,11 @@ h2::after {
         width: 120px;
         height: 120px;
     }
-
+    
+    .home {
+        padding: 0;
+    }
+    
     .hero {
         margin-top: -80px;
     }
@@ -946,6 +950,14 @@ h2::after {
         padding: 60px 20px;
     }
 
+    .route-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .route-box button,
+    .route-box input {
+        width: 100%;
+    }
     .pix-card {
         padding: 30px 20px;
     }
